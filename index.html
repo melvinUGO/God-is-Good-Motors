@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIG</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <nav>
+          <div>
+            <img src="./images/favicon.ico" alt="" />
+          </div>
+          <div class="nav-links">
+            <div class="dropdown">
+              <p class="dropbtn">Move Freely</p>
+              <div class="dropdown-content">
+                <a href="#">Pick up Servic</a>
+                <a href="#">Hire a Bus</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <p class="dropbtn">Do Freely</p>
+              <div class="dropdown-content">
+                <a href="#">Bills Payment</a>
+                <a href="#">enterprise partners</a>
+              </div>
+            </div>
+            <p>Suggest Route</p>
+            <button class="nav-btn btn">Sign In/Sign Up</button>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <section class="hero">
+      <div class="container grid">
+        <div class="hero-text text">
+          <h2>The modern way to commute across cities</h2>
+          <br />
+          <p>
+            GIGM is an African technology powered company, providing seamless
+            mobility services to commuters across Africa
+          </p>
+        </div>
+        <div>
+          <section class="open-positions">
+            <div class="positions">
+              <div class="positions-filter">
+                <label class="tab active-tab" data-id="book-a-seat"
+                  >Book a seat</label
+                ><label class="tab" data-id="hire-a-bus">Hire a bus</label
+                ><label class="tab" data-id="booking-status"
+                  >Booking status</label
+                >
+              </div>
+              <div class="position-group active" id="book-a-seat">
+                <div class="position-post">
+                  <div class="book-a-seat">
+                    <div class="position-btn-container">
+                      <button>One Way</button>
+                      <button>Roud Trip</button>
+                    </div>
+                    <label for="depature">Travalling From</label><br />
+                    <select name="depature" id="depature">
+                      <option value="">depature time</option>
+                      <option value="">Abia=>Abba</option>
+                      <option value="">Anambra => Akwa</option>
+                      <option value="">Lagos => Ajah</option>
+                      <option value="">Imo => Owerri</option>
+                    </select>
+                    <br />
+                    <label for="travelling">Travelling To</label><br />
+                    <select name="travelling" id="travelling">
+                      <option value="">depature time</option>
+                      <option value="">Abia=>Abba</option>
+                      <option value="">Anambra => Akwa</option>
+                      <option value="">Lagos => Ajah</option>
+                      <option value="">Imo => Owerri</option>
+                    </select>
+                    <br />
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                      "
+                    >
+                      <div>
+                        <label for="depature">Depature Date</label>
+                        <input type="date" />
+                      </div>
+
+                      <div>
+                        <label for="adults">Adults</label>
+                        <select name="adult" id="adult">
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4</option>
+                          <option value="">5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <br />
+                    <button class="proceed-btn">Proceed</button>
+                  </div>
+                </div>
+              </div>
+              <div class="position-group" id="hire-a-bus">
+                <div class="position-post">
+                  <div class="hire-a-bus">
+                    <div class="position-btn-container">
+                      <button>One Way</button>
+                      <button>Roud Trip</button>
+                    </div>
+                    <label for="hire">Hire From</label><br />
+                    <select name="hire" id="hire">
+                      <option value="">Enter Depature Point...</option>
+                      <option value="">Abia=>Abba</option>
+                      <option value="">Anambra => Akwa</option>
+                      <option value="">Lagos => Ajah</option>
+                      <option value="">Imo => Owerri</option>
+                    </select>
+                    <br />
+                    <label for="hire">Hire Destination </label><br />
+                    <select name="hire" id="hire">
+                      <option value="">Enter Hire Destination...</option>
+                      <option value="">Abia=>Abba</option>
+                      <option value="">Anambra => Akwa</option>
+                      <option value="">Lagos => Ajah</option>
+                      <option value="">Imo => Owerri</option>
+                    </select>
+                    <br />
+                    <label for="depature">Depature Date</label><br />
+                    <input type="date" />
+                    <br />
+
+                    <button class="proceed-btn">Proceed</button>
+                  </div>
+                </div>
+              </div>
+              <div class="position-group" id="booking-status">
+                <div class="position-post">
+                  <div class="booking-status">
+                    <label for="status">Check booking status</label>
+                    <input
+                      type="text"
+                      id="status"
+                      placeholder="Enter Ref code"
+                    />
+                    <br />
+                    <button class="proceed-btn">Proceed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section class="trips">
+      <div class="container grid">
+        <div class="price-container text">
+          <h1>Best Trip Prices</h1>
+          <p>Bringing you more routes at the best prices.</p>
+        </div>
+      </div>
+    </section>
+    <section class="app-section grid">
+      <div class="text">
+        <h1>Enjoy the <span>GIGM Appvantage</span></h1>
+        <h1>Move Freely, Do Easily</h1>
+        <p>
+          It is all you need in one. Book bus tickets, hire a vehicle and pay
+          bills.
+        </p>
+        <!-- <img src="./images/google.webp" alt="" />
+        <img src="./images/appstore.webp" alt="" /> -->
+      </div>
+      <div class="">
+        <img src="./images/phone.webp" alt="" />
+      </div>
+    </section>
+    <section class="wallet-section">
+      <div class="container grid">
+        <div class="wallet-section-text text">
+          <h1>The lightest wallet you will ever own</h1>
+          <p>
+            The GIGM digital wallet is a seamless way to pay for transactions
+            within our ecosystem. Purchase bus tickets, airtime, data and pay
+            for utility bills using the wallet available only on the mobile app.
+          </p>
+        </div>
+        <div class="wallet-section-img">
+          <img src="./images/card.webp" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="ep-section grid">
+      <div class="ep-section-text"></div>
+      <div class="ep-section-img">
+        <img src="./images/man.webp" alt="" />
+      </div>
+    </section>
+    <section class="subscribe-section">
+      <div class="container" style="padding: 20px">
+        <div class="grid card">
+          <div class="text">
+            <h1>
+              Be the first to receive the latest news and product updates.
+            </h1>
+          </div>
+          <div>
+            <div class="input-container">
+              <input
+                type="email"
+                class="email-input"
+                placeholder="Enter email"
+              />
+              <button class="btn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="section-footer container">
+      <div>
+        <img src="./images/favicon.ico" alt="" />
+      </div>
+      <div class="">
+        <p><b>Company</b></p>
+        <p>About Us</p>
+        <p>Team</p>
+      </div>
+      <div>
+        <p><b>Experience</b></p>
+        <p>Contact Us</p>
+        <p>FAQs</p>
+        <p>Find a Terminal</p>
+      </div>
+      <div>
+        <p><b>Terms</b></p>
+        <p>Privacy Policy</p>
+        <p>Terms & Conditions</p>
+      </div>
+      <div>
+        <p><b>Connect with us</b></p>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
