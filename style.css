@@ -68,7 +68,9 @@ a {
 }
 
 img {
+  display: block;
   width: 100%;
+  object-fit: cover;
 }
 
 /* nav styles */
@@ -77,10 +79,11 @@ img {
   padding: 15px;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -156,6 +159,7 @@ nav {
   background-repeat: no-repeat;
   height: 100vh;
   padding-top: 100px;
+  overflow: hidden;
 }
 .hero-text {
   color: white;
@@ -274,6 +278,52 @@ input {
   height: 50vh;
   width: 100%;
 }
+
+.trips > .grid {
+  grid-template-columns: 1fr 2fr;
+}
+
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.slide {
+  position: absolute;
+  width: 35%;
+  padding: 35px;
+  display: grid;
+  place-items: center;
+  transition: all 0.25s ease-in-out;
+  text-align: center;
+}
+
+.slide-img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.slide:nth-child(1) {
+  left: 40%;
+}
+.slide:nth-child(2) {
+  left: 70%;
+}
+.slide:nth-child(3) {
+  left: 100%;
+}
+.slide:nth-child(4) {
+  left: 130%;
+}
+.slide {
+  transform: translateX(-200%);
+}
+/* negative value moves to left */
 
 /* app section */
 .app-section {
