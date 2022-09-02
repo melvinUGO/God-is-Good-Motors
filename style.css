@@ -35,11 +35,11 @@ h5 {
 
 h1 {
   margin-top: 0;
-  font-size: 3.052rem;
+  font-size: 3.1rem;
 }
 
 h2 {
-  font-size: 2.441rem;
+  font-size: 2.741rem;
 }
 
 h3 {
@@ -73,6 +73,16 @@ img {
   object-fit: cover;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
 /* nav styles */
 .navbar {
   background-color: white;
@@ -82,14 +92,18 @@ img {
   z-index: 2;
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
+.burger {
+  display: none;
+}
+
+.text {
+  font-size: 1.2rem;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav-links {
@@ -158,24 +172,22 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  padding-top: 100px;
+  padding: 100px 0;
   overflow: hidden;
 }
 .hero-text {
   color: white;
-}
-.text {
-  text-align: center;
-  margin-top: 3rem;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 50px;
+  align-items: center;
 }
 
 /* positions */
+
 /* forms */
 .open-positions {
   width: 90%;
@@ -330,12 +342,52 @@ input {
   height: 70vh;
   overflow: hidden;
 }
+
+.app-section > .text {
+  width: 100%;
+  height: 80%;
+  padding: 100px 0;
+  background-color: lightblue;
+}
+
+.app-section > .text > div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.app-section > .text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.app-section > .text h1 span {
+  color: red;
+}
 /* wallet section */
 .wallet-section {
   margin-top: 100px;
 }
+
+.wallet-section-text {
+  width: 50%;
+}
+
+.wallet-section-text > h1 {
+  font-weight: bolder;
+}
+
+.wallet-section-text > p {
+  font-size: 1rem;
+}
 /* ep section */
 .ep-section {
+  grid-template-columns: 1.5fr 1fr;
+  background-color: lightblue;
+}
+
+.ep-section-text {
+  width: 100%;
+  height: 100%;
 }
 /* subscribe section */
 .subscribe-section {
@@ -343,14 +395,16 @@ input {
 }
 .input-container {
   text-align: center;
-  margin-top: 8rem;
 }
 
-.input-container > input {
+.email-input {
   width: 70%;
   padding: 10px;
   border: 2px solid blue;
   border-right: none;
+  background-color: rgb(239, 241, 241);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .input-container > .btn {
@@ -361,13 +415,174 @@ input {
 }
 
 .card {
+  padding: 20px;
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
+  background-color: white;
+}
+
+.card > .text {
+  width: 80%;
+}
+
+.card > .text h3 {
+  font-weight: bold;
 }
 
 /* footer section */
 .section-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/********** pick up page ************/
+.pick-up {
+  padding: 7rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* suggest section */
+.suggest-section {
+  background-color: lightblue;
+}
+
+/****** media querys ******/
+
+@media screen and (max-width: 1020px) {
+  section {
+    margin-bottom: 0px;
+  }
+
+  .grid {
+    column-gap: 10px;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .trips {
+    height: auto;
+  }
+
+  .slider-container {
+    display: none;
+  }
+
+  .app-section {
+    height: 50vh;
+  }
+
+  .wallet-section {
+    height: 50vh;
+    margin: 0;
+  }
+
+  .wallet-section-text {
+    width: 80%;
+  }
+
+  .ep-section {
+    margin-bottom: 100px;
+  }
+
+  .subscribe-section {
+    height: 30vh;
+  }
+
+  .footer-img-container {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .footer-img {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    height: 90vh;
+  }
+
+  .trips > .grid {
+    grid-template-columns: 1fr;
+  }
+  .price-container > h1 {
+    font-size: 4rem;
+  }
+
+  .price-container > p {
+    font-size: 1.5rem;
+  }
+
+  .app-section {
+    height: 70vh;
+  }
+
+  .wallet-section {
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav-links {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger > button {
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    color: red;
+  }
+
+  .hero {
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .open-positions {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .price-container > h1 {
+    font-size: 3rem;
+  }
+
+  .app-section {
+    height: auto;
+  }
+
+  .wallet-section {
+    height: auto;
+  }
+
+  .subscribe-section {
+    height: auto;
+  }
+
+  .card > .text {
+    width: 100%;
+  }
+  .card > .text h3 {
+    margin: 0;
+  }
+
+  .footer-links {
+    width: 50%;
+  }
 }

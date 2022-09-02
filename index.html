@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GIG</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="./style.css"
+      type="text/css"
+      media="screen, projection"
+    />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <div class="navbar">
       <div class="container">
         <nav>
           <div>
-            <img src="./images/favicon.ico" alt="" />
+            <a href="./index.html"><img src="./images/favicon.ico" alt="" /></a>
           </div>
           <div class="nav-links">
             <div class="dropdown">
               <p class="dropbtn">Move Freely</p>
               <div class="dropdown-content">
-                <a href="#">Pick up Servic</a>
+                <a href="./pick-up-service.html">Pick up Servic</a>
                 <a href="#">Hire a Bus</a>
               </div>
             </div>
@@ -31,6 +37,11 @@
             </div>
             <p>Suggest Route</p>
             <button class="nav-btn btn">Sign In/Sign Up</button>
+          </div>
+          <div class="burger">
+            <button>
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
           </div>
         </nav>
       </div>
@@ -191,14 +202,16 @@
     </section>
     <section class="app-section grid">
       <div class="text">
-        <h1>Enjoy the <span>GIGM Appvantage</span></h1>
-        <h1>Move Freely, Do Easily</h1>
-        <p>
-          It is all you need in one. Book bus tickets, hire a vehicle and pay
-          bills.
-        </p>
-        <!-- <img src="./images/google.webp" alt="" />
+        <div>
+          <h1>Enjoy the <span>GIGM Appvantage</span></h1>
+          <h1>Move Freely, Do Easily</h1>
+          <p>
+            It is all you need in one. Book bus tickets, hire a vehicle and pay
+            bills.
+          </p>
+          <!-- <img src="./images/google.webp" alt="" />
         <img src="./images/appstore.webp" alt="" /> -->
+        </div>
       </div>
       <div class="">
         <img src="./images/phone.webp" alt="" />
@@ -225,51 +238,51 @@
         <img src="./images/man.webp" alt="" />
       </div>
     </section>
-    <section class="subscribe-section">
-      <div class="container" style="padding: 20px">
-        <div class="grid card">
-          <div class="text">
-            <h1>
-              Be the first to receive the latest news and product updates.
-            </h1>
-          </div>
-          <div>
-            <div class="input-container">
-              <input
-                type="email"
-                class="email-input"
-                placeholder="Enter email"
-              />
-              <button class="btn">Subscribe</button>
-            </div>
+    <section class="subscribe-section container">
+      <div class="card grid">
+        <div class="text">
+          <h3>Be the first to receive the latest news and product updates.</h3>
+        </div>
+        <div>
+          <div class="input-container">
+            <input type="email" class="email-input" placeholder="Enter email" />
+            <button class="btn">Subscribe</button>
           </div>
         </div>
       </div>
     </section>
     <footer class="section-footer container">
-      <div>
-        <img src="./images/favicon.ico" alt="" />
+      <div class="footer-img-container">
+        <img src="./images/favicon.ico" alt="" class="footer-img" />
       </div>
-      <div class="">
-        <p><b>Company</b></p>
+      <div class="footer-links">
+        <h4><b>Company</b></h4>
         <p>About Us</p>
         <p>Team</p>
       </div>
-      <div>
-        <p><b>Experience</b></p>
+      <div class="footer-links">
+        <h4><b>Experience</b></h4>
         <p>Contact Us</p>
         <p>FAQs</p>
         <p>Find a Terminal</p>
       </div>
-      <div>
-        <p><b>Terms</b></p>
+      <div class="footer-links">
+        <h4><b>Terms</b></h4>
         <p>Privacy Policy</p>
         <p>Terms & Conditions</p>
       </div>
-      <div>
-        <p><b>Connect with us</b></p>
+      <div class="footer-links">
+        <h4><b>Connect with us</b></h4>
       </div>
     </footer>
-    <script src="./index.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
