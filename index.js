@@ -1,6 +1,8 @@
 const tabs = document.querySelectorAll(".tab");
 const positionGroups = document.querySelectorAll(".position-group");
 const form = document.querySelector(".positions");
+const btn = document.querySelector(".burger");
+const links = document.querySelector(".nav-links");
 
 form.addEventListener("click", (e) => {
   const id = e.target.dataset.id;
@@ -20,4 +22,8 @@ form.addEventListener("click", (e) => {
     const tab = document.getElementById(id);
     tab.classList.add("active");
   }
+});
+
+btn.addEventListener("click", () => {
+  links.classList.toggle("height");
 });

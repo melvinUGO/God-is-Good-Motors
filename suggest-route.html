@@ -49,23 +49,52 @@
         </nav>
       </div>
     </div>
-    <section class="pick-up container">
-      <div class="location">
-        <h1>Pick up locations</h1>
-        <input type="text" placeholder="search for pick up location" />
-      </div>
-      <div class="map">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-text text" style="text-align: center">
+          <h2>Suggest a Route</h2>
+          <p>
+            We plan on serving you better, suggest a route we should go to now!
+          </p>
+        </div>
         <div>
-          <iframe
-            class="google-map"
-            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3964.40788905779!2d3.5764583146871036!3d6.469904245319497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgigm%20ajah!5e0!3m2!1sen!2sng!4v1661651329537!5m2!1sen!2sng"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <section class="route-container">
+            <div>
+              <h2>Route</h2>
+              <p>
+                Please kindly provide the little information below and submit
+              </p>
+            </div>
+            <form>
+              <label for="depature">Route Depature</label><br />
+              <select name="depature" id="depature">
+                <option value="">depature time</option>
+                <option value="">Abia=>Abba</option>
+                <option value="">Anambra => Akwa</option>
+                <option value="">Lagos => Ajah</option>
+                <option value="">Imo => Owerri</option>
+              </select>
+              <label for="depature">Destination Route</label><br />
+              <select name="depature" id="depature">
+                <option value="">Enter Arrival Route</option>
+                <option value="">Abia=>Abba</option>
+                <option value="">Anambra => Akwa</option>
+                <option value="">Lagos => Ajah</option>
+                <option value="">Imo => Owerri</option>
+              </select>
+              <br />
+              <label for="full-name">Full Name</label>
+              <input type="text" placeholder="Enter Full Name" />
+              <br />
+              <label for="email">Email</label>
+              <input type="text" placeholder="example@gmail.com" />
+              <br />
+              <label for="phonenumber">Phone Number</label>
+              <input type="tel" />
+              <br />
+              <button class="proceed-btn">Submit</button>
+            </form>
+          </section>
         </div>
       </div>
     </section>
@@ -83,52 +112,44 @@
         </div>
       </div>
     </section>
-    <section class="subscribe-section">
-      <div class="container" style="padding: 20px">
-        <div class="grid card">
-          <div class="text">
-            <h1>
-              Be the first to receive the latest news and product updates.
-            </h1>
-          </div>
-          <div>
-            <div class="input-container">
-              <input
-                type="email"
-                class="email-input"
-                placeholder="Enter email"
-              />
-              <button class="btn">Subscribe</button>
-            </div>
+    <section class="subscribe-section container">
+      <div class="card grid">
+        <div class="text">
+          <h3>Be the first to receive the latest news and product updates.</h3>
+        </div>
+        <div>
+          <div class="input-container">
+            <input type="email" class="email-input" placeholder="Enter email" />
+            <button class="btn">Subscribe</button>
           </div>
         </div>
       </div>
     </section>
     <footer class="section-footer container">
-      <div>
-        <img src="./images/favicon.ico" alt="" />
+      <div class="footer-img-container">
+        <img src="./images/favicon.ico" alt="" class="footer-img" />
       </div>
-      <div class="">
-        <p><b>Company</b></p>
+      <div class="footer-links">
+        <h4><b>Company</b></h4>
         <p>About Us</p>
         <p>Team</p>
       </div>
-      <div>
-        <p><b>Experience</b></p>
+      <div class="footer-links">
+        <h4><b>Experience</b></h4>
         <p>Contact Us</p>
         <p>FAQs</p>
         <p>Find a Terminal</p>
       </div>
-      <div>
-        <p><b>Terms</b></p>
+      <div class="footer-links">
+        <h4><b>Terms</b></h4>
         <p>Privacy Policy</p>
         <p>Terms & Conditions</p>
       </div>
-      <div>
-        <p><b>Connect with us</b></p>
+      <div class="footer-links">
+        <h4><b>Connect with us</b></h4>
       </div>
     </footer>
-    <script src="./index.js"></script>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
